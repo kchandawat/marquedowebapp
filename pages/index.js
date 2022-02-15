@@ -15,7 +15,6 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -38,12 +37,9 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import { BannerLink } from "../components/BannerLink";
 
-export default function marquedo() {
+export default function index() {
   const [visible, setVisible] = useState(true);
-  const isMobile = useBreakpointValue({
-    base: true,
-    md: false,
-  });
+
   return (
     <Flex flexDirection="column" backgroundColor="#230C0F" h="100%">
       <Box as="section" display={visible ? "-moz-initial" : "none"}>
@@ -85,7 +81,7 @@ export default function marquedo() {
       </Box>
       <Head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
