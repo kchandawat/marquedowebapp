@@ -37,7 +37,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import { BannerLink } from "../components/BannerLink";
 
-export default function index() {
+export default function Index() {
   const [visible, setVisible] = useState(true);
 
   return (
